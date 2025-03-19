@@ -302,7 +302,7 @@ def streaming_chat_loop(conversation, filepath, client):
         if user_input.lower() == 'exit':
             break
 
-        # Add user message to conversation and API messages
+        # Add user message to conversation and API messages.
         timestamp = datetime.datetime.now().isoformat()
         conversation["messages"].append({
             "role": "user",
